@@ -5,6 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Food</title>
+
+		<!-- swiper js for slider -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+
 		<!-- Font awesome -->
 		<link
 			rel="stylesheet"
@@ -13,6 +20,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
 		<!-- app style -->
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -21,7 +29,7 @@
 		<header>
 			<a href="#" class="logo"><i class="fas fa-utensils"> Food</i></a>
 			<nav class="navbar">
-				<a href="#home"  class="active">home</a>
+				<a href="#home" class="active">home</a>
 				<a href="#dishes">dishes</a>
 				<a href="#about">about</a>
 				<a href="#menu">menu</a>
@@ -37,14 +45,85 @@
 		</header>
 		<!-- end header section -->
 
-		<!-- Search form -->
+		<!-- Start search form -->
 		<form action="#" id="search-form">
-			<input type="search" placeholder="Search here ..." name="" id="search-box">
+			<input
+				type="search"
+				placeholder="Search here ..."
+				name=""
+				id="search-box"
+			/>
 			<label for="search-box" class="fas fa-search"></label>
 			<i class="fas fa-times" id="close"></i>
 		</form>
 		<!-- End search form -->
 
+		<!-- Start home section -->
+		<section class="home" id="home">
+			<div class="swiper home-slider">
+				<div class="swiper-wrapper wrapper">
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>our special dish</span>
+							<h3>spicy noodles</h3>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur
+								adipisicing elit. Modi, porro quisquam mollitia
+								accusantium corrupti est saepe aut adipisci
+								itaque minus vel autem blanditiis tempora fugiat
+								optio illo quam rem illum!
+							</p>
+							<a href="#" class="btn">order now</a>
+						</div>
+						<div class="image">
+							<img src="img/spicy-noodles.jpg" alt="" />
+						</div>
+					</div>
+					<!--  -->
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>our special dish</span>
+							<h3>fried chicken</h3>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur
+								adipisicing elit. Modi, porro quisquam mollitia
+								accusantium corrupti est saepe aut adipisci
+								itaque minus vel autem blanditiis tempora fugiat
+								optio illo quam rem illum!
+							</p>
+							<a href="#" class="btn">order now</a>
+						</div>
+						<div class="image">
+							<img src="img/fried chicken.jpg" alt="" />
+						</div>
+					</div>
+					<!--  -->
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>our special dish</span>
+							<h3>hot pizza</h3>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur
+								adipisicing elit. Modi, porro quisquam mollitia
+								accusantium corrupti est saepe aut adipisci
+								itaque minus vel autem blanditiis tempora fugiat
+								optio illo quam rem illum!
+							</p>
+							<a href="#" class="btn">order now</a>
+						</div>
+						<div class="image">
+							<img src="img/hot pizza.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<!-- End home section -->
+
+		<!-- swiper js for slider -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		
 		<!-- app script -->
 		<script src="./js/script.js"></script>
 	</body>
